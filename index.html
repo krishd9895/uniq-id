@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Code Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Unique Id Generator</h1>
+    <div class="input-group">
+      <label for="season">Season:</label>
+      <select id="season">
+        <option value="Kharif">Kharif</option>
+        <option value="Rabi">Rabi</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="district">District Code:</label>
+      <select id="district">
+        
+        <option value="04">04(Nirmal)</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="crop">Crop:</label>
+      <select id="crop"></select>
+    </div>
+    <div class="input-group">
+      <label for="village">Village:</label>
+      <select id="village"></select>
+    </div>
+    <button id="generate-button">Generate Unique Id</button>
+    <div class="result">
+      <div id="project-code"></div>
+      <button id="copy-button" style="display: none; font-size: 14px;">📋</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
