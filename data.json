@@ -1,0 +1,41 @@
+{
+  "crops": [
+    { "name": "Bengalgram", "code": "10505" },
+    { "name": "Cotton", "code": "20100" },
+    { "name": "Jowar", "code": "10201" },
+    { "name": "Maize", "code": "10203" },
+    { "name": "Paddy", "code": "10101" },
+    { "name": "Red gram", "code": "10504" },
+    { "name": "Seasmum", "code": "20302" },
+    { "name": "Soyabeen", "code": "20307" },
+    { "name": "Tomatoes", "code": "11223" },
+    { "name": "Turmeric", "code": "10704" },
+    { "name": "Black gram", "code": "10503" },
+    { "name": "Green gram", "code": "10502" },
+    { "name": "Castor", "code": "20401" }
+  ],
+  "villages": [
+    { "name": "Kadili", "code": "570306" },
+    { "name": "Malegaon", "code": "570307" },
+    { "name": "Kalva", "code": "570308" },
+    { "name": "New Lolam(R.C.)", "code": "570309" },
+    { "name": "Arli (Buzurg) (UI)", "code": "570317" },
+    { "name": "Samanderpalle", "code": "570318" },
+    { "name": "Chintalkunta(UI)", "code": "570319" },
+    { "name": "Gundampalle", "code": "570320" },
+    { "name": "Dilawarpur", "code": "570321" },
+    { "name": "Sirgapur", "code": "570322" },
+    { "name": "Mayapur", "code": "570323" },
+    { "name": "Banaspalle", "code": "570324" },
+    { "name": "Lingampalle", "code": "570325" },
+    { "name": "Kothur(UI)", "code": "570326" },
+    { "name": "Kanjar", "code": "570327" },
+    { "name": "Ratnapur (K)", "code": "570328" },
+    { "name": "Sangvi", "code": "570329" },
+    { "name": "Mallapur", "code": "570330" },
+    { "name": "Potpalle(Khurd)(UI)", "code": "570331" },
+    { "name": "Mujgi(UI)", "code": "570332" },
+    { "name": "Siddankunta(UI)", "code": "570333" }
+
+  ]
+}
