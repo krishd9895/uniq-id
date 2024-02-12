@@ -72,3 +72,27 @@ button:hover {
   font-size: 14px;
   padding: 8px 12px;
 }
+.result {
+  display: flex;
+  align-items: center;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+}
+
+.unique-id {
+  margin-right: 5px; /* Adjust margin to the right of the Unique ID */
+}
+
+.copy-button {
+  margin-left: 5px; /* Adjust margin to the left of the copy button */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  line-height: 1;
+  width: auto;
+}
