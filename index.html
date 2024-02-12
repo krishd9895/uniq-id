@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Code Generator</title>
+  <title>Unique id Generator</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="container">
     <h1>Unique Id Generator</h1>
@@ -19,7 +21,6 @@
     <div class="input-group">
       <label for="district">District Code:</label>
       <select id="district">
-        
         <option value="04">04(Nirmal)</option>
       </select>
     </div>
@@ -33,11 +34,13 @@
     </div>
     <button id="generate-button">Generate Unique Id</button>
     <div class="result">
-      <div id="project-code"></div>
-      <button id="copy-button" style="display: none; font-size: 14px;">📋</button>
+      <div id="Unique_id" class="unique-id"></div>
+      <button id="copy-button" class="copy-button" style="display: none; font-size: 14px;">📋</button>
     </div>
+    <p id="highest_sy_no"></p>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
