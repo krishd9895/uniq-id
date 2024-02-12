@@ -33,12 +33,25 @@ async function generateCode() {
   const cropCode = getCropCode(crops, crop);
   const villageCode = getVillageCode(villages, village);
 
-  const projectCode = season + district + cropCode + villageCode;
-  document.getElementById("project-code").innerText = projectCode;
+  const Uniqueid = season + district + cropCode + villageCode;
+  document.getElementById("Unique_id").innerText = Uniqueid;
 
   // Show the copy button
   document.getElementById("copy-button").style.display = "inline";
+
+  // Find the village object
+  const selectedVillage = villages.find(v => v.name.toLowerCase() === village.toLowerCase());
+  if (selectedVillage) {
+    const highestSyNo = selectedVillage.highest_sy_no;
+    document.getElementById("highest_sy_no").innerText = "Highest Sy No: " + highestSyNo;
+  } else {
+    document.getElementById("highest_sy_no").innerText = "";
+  }
+
+
 }
+
+
 
 function getCropCode(crops, cropName) {
   const crop = crops.find(c => c.name.toLowerCase() === cropName.toLowerCase());
@@ -55,9 +68,9 @@ populateDropdowns();
 document.getElementById("generate-button").addEventListener("click", generateCode);
 
 document.getElementById("copy-button").addEventListener("click", function() {
-  const projectCode = document.getElementById("project-code").innerText;
-  navigator.clipboard.writeText(projectCode).then(() => {
-    alert("Unique Id copied to clipboard: " + projectCode);
+  const Uniqueid = document.getElementById("Unique_id").innerText;
+  navigator.clipboard.writeText(Uniqueid).then(() => {
+    alert("Unique Id copied to clipboard: " + Uniqueid);
   }).catch(err => {
     console.error('Failed to copy: ', err);
   });
