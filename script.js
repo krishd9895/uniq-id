@@ -1,7 +1,31 @@
 async function fetchData() {
-  const response = await fetch('data.json');
-  return await response.json();
+  let data;
+  try {
+    // Try fetching data.json directly
+    const response = await fetch('data.json');
+    data = await response.json();
+  } catch (error) {
+    console.error('Error fetching data.json directly:', error);
+    // If fetching directly fails, attempt to read from secrets
+    data = await fetchDataFromSecrets();
+  }
+  return data;
 }
+
+async function fetchDataFromSecrets() {
+  try {
+    // Read data.json from secrets
+    const fs = require('fs').promises;
+    const path = '/etc/secrets/data.json';
+    const data = await fs.readFile(path, 'utf8');
+    return JSON.parse(data);
+  } catch (error) {
+    console.error('Error reading data.json from secrets:', error);
+    throw new Error('Failed to fetch data.json from both direct fetch and secrets');
+  }
+}
+
+
 
 async function populateDropdowns() {
   const { crops, villages } = await fetchData();
